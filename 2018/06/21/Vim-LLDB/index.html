@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hello, world!" />
+  <meta name="keywords" content="Linux," />
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="A Place of Self-Discovering">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Baichen&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="LLDB是个开源的，内置于XCode的具有REPL(read-eval-print-loop)特征的Debugger，其可以安装C++或者Python插件。 命令结构&amp;lt;command&amp;gt; [&amp;lt;subcommand&amp;gt; [&amp;lt;subcommand&amp;g">
+<meta name="keywords" content="Linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vim &amp; LLDB">
+<meta property="og:url" content="http://yoursite.com/2018/06/21/Vim-LLDB/index.html">
 <meta property="og:site_name" content="Baichen&#39;s Blog">
-<meta property="og:description" content="A Place of Self-Discovering">
+<meta property="og:description" content="LLDB是个开源的，内置于XCode的具有REPL(read-eval-print-loop)特征的Debugger，其可以安装C++或者Python插件。 命令结构&amp;lt;command&amp;gt; [&amp;lt;subcommand&amp;gt; [&amp;lt;subcommand&amp;gt;...]] &amp;lt;action&amp;gt; [-options [option-value]] [argument [argu">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-07-05T05:33:16.994Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Baichen&#39;s Blog">
-<meta name="twitter:description" content="A Place of Self-Discovering">
+<meta name="twitter:title" content="Vim &amp; LLDB">
+<meta name="twitter:description" content="LLDB是个开源的，内置于XCode的具有REPL(read-eval-print-loop)特征的Debugger，其可以安装C++或者Python插件。 命令结构&amp;lt;command&amp;gt; [&amp;lt;subcommand&amp;gt; [&amp;lt;subcommand&amp;gt;...]] &amp;lt;action&amp;gt; [-options [option-value]] [argument [argu">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/21/Vim-LLDB/"/>
 
 
 
 
 
-  <title>Baichen's Blog</title>
+  <title>Vim & LLDB | Baichen's Blog</title>
   
 
 
@@ -143,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -227,173 +228,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/21/scanf-printf/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="YANG Baichen">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Baichen's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/21/scanf-printf/" itemprop="url">scanf & printf</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-21T21:54:49+08:00">
-                2018-06-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>###Format</p>
-<p><code>scanf(&quot;format-specifiers&quot;, address-table)</code></p>
-<p><code>printf(&quot;format-specifiers&quot;, variables)</code></p>
-<h3 id="Parameters-Format-specifiers"><a href="#Parameters-Format-specifiers" class="headerlink" title="Parameters/Format specifiers"></a>Parameters/Format specifiers</h3><p><code>scanf</code>‘s specifier <strong>portotype:</strong></p>
-<p><code>[%][width][length][specifier]</code></p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Specifier</th>
-<th>Description</th>
-<th>Notice</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><code>i</code></td>
-<td>Integer</td>
-<td><code>+</code> <code>-</code> <code>0</code>(oct) <code>0x</code>(hex)</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>d</code>or<code>u</code></td>
-<td>Decimal</td>
-<td><code>+</code> <code>-</code></td>
-</tr>
-<tr>
-<td style="text-align:left"><code>o</code></td>
-<td>Octal</td>
-<td><code>+</code> <code>-</code></td>
-</tr>
-<tr>
-<td style="text-align:left"><code>x</code></td>
-<td>Hexdecimal</td>
-<td><code>+</code> <code>-</code></td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -423,9 +260,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/21/Vim-LLDB/" itemprop="url">Vim & LLDB</a></h1>
+          <h1 class="post-title" itemprop="name headline">Vim & LLDB</h1>
         
 
         <div class="post-meta">
@@ -475,9 +310,7 @@
       
 
       
-        
-          
-            <p>LLDB是个开源的，内置于XCode的具有REPL(read-eval-print-loop)特征的Debugger，其可以安装C++或者Python插件。</p>
+        <p>LLDB是个开源的，内置于XCode的具有REPL(read-eval-print-loop)特征的Debugger，其可以安装C++或者Python插件。</p>
 <h2 id="命令结构"><a href="#命令结构" class="headerlink" title="命令结构"></a>命令结构</h2><p><code>&lt;command&gt; [&lt;subcommand&gt; [&lt;subcommand&gt;...]] &lt;action&gt; [-options [option-value]] [argument [argument...]]</code></p>
 <p>其中：</p>
 <ol>
@@ -508,8 +341,6 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(lldb) breakpoint <span class="built_in">command</span> add &lt;identification&gt;</span><br><span class="line">Enter your debugger <span class="built_in">command</span>(s). Type <span class="string">'DONE'</span> to end</span><br><span class="line">&gt; bt (or some other <span class="built_in">command</span>)</span><br><span class="line">&gt; DONE</span><br></pre></td></tr></table></figure></li>
 </ol>
 
-          
-        
       
     </div>
     
@@ -524,262 +355,40 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/21/Linux-Commands/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="YANG Baichen">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Baichen's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/21/Linux-Commands/" itemprop="url">Linux Commands</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-21T21:35:26+08:00">
-                2018-06-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/Linux/" rel="tag"># Linux</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/31/Hexo/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="YANG Baichen">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Baichen's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/31/Hexo/" itemprop="url">Hexo</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+              <a href="/2018/06/21/Linux-Commands/" rel="next" title="Linux Commands">
+                <i class="fa fa-chevron-left"></i> Linux Commands
+              </a>
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-31T13:24:25+08:00">
-                2018-05-31
-              </time>
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
+              <a href="/2018/06/21/scanf-printf/" rel="prev" title="scanf & printf">
+                scanf & printf <i class="fa fa-chevron-right"></i>
+              </a>
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h2 id="Hexo-Blog-Constructor"><a href="#Hexo-Blog-Constructor" class="headerlink" title="Hexo Blog Constructor"></a>Hexo Blog Constructor</h2><p><strong>Pre-requisite:</strong> Node.js, Git</p>
-<h3 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-<h3 id="Set-up"><a href="#Set-up" class="headerlink" title="Set-up"></a>Set-up</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ cd &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-<p><em>To justify the configuration, edit the</em> <strong>_config.yml</strong></p>
-<h3 id="Writing"><a href="#Writing" class="headerlink" title="Writing"></a>Writing</h3><h4 id="new"><a href="#new" class="headerlink" title="new"></a>new</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &lt;title&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
-<p><em>generate static corresponding files</em></p>
-<h4 id="localhost-test"><a href="#localhost-test" class="headerlink" title="localhost test"></a>localhost test</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$hexo server</span><br></pre></td></tr></table></figure>
-<h4 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-<h4 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -789,140 +398,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/31/Ladder/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="YANG Baichen">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Baichen's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/31/Ladder/" itemprop="url">Ladder</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-31T13:22:54+08:00">
-                2018-05-31
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>Ladder for the Great Wall (by Amazon EC2 Server and Shadowsocks)</strong></p>
-<ol>
-<li>register for the aws</li>
-<li>make an instance of EC2 (ubuntu)</li>
-<li>Authorize the public key <code>chmod 400 ladder.pem</code> </li>
-<li><code>apt-get upgrade</code></li>
-<li><code>apt-get install python-pip</code></li>
-<li><code>pip install shadowsocks</code></li>
-<li>Shadowsocks configuration</li>
-<li>Download client for Shadowsocks and configure <strong>port</strong> and <strong>IP</strong> </li>
-</ol>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -930,6 +410,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -950,8 +434,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1018,6 +511,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#命令结构"><span class="nav-number">1.</span> <span class="nav-text">命令结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令"><span class="nav-number">2.</span> <span class="nav-text">常用命令</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1145,6 +654,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
