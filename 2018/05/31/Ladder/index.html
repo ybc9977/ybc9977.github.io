@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="Ladder for the Great Wall (by Amazon EC2 Server and Shadowsocks)  register for the aws make an instance of EC2 (ubuntu) Authorize the public key chmod 400 ladde">
+<meta name="description" content="Ladder for the Great Wall (by Amazon EC2 Server and Shadowsocks)  register for the aws  make an instance of EC2 (ubuntu)  Authorize the public key chmod 400 lad">
 <meta name="keywords" content="Server">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ladder">
 <meta property="og:url" content="http://yoursite.com/2018/05/31/Ladder/index.html">
 <meta property="og:site_name" content="Baichen&#39;s Blog">
-<meta property="og:description" content="Ladder for the Great Wall (by Amazon EC2 Server and Shadowsocks)  register for the aws make an instance of EC2 (ubuntu) Authorize the public key chmod 400 ladder.pem  apt-get upgrade apt-get install p">
+<meta property="og:description" content="Ladder for the Great Wall (by Amazon EC2 Server and Shadowsocks)  register for the aws  make an instance of EC2 (ubuntu)  Authorize the public key chmod 400 ladder.pem   sudo apt-get upgrade  sudo apt">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-21T13:37:23.082Z">
+<meta property="og:updated_time" content="2018-08-07T14:03:28.984Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ladder">
-<meta name="twitter:description" content="Ladder for the Great Wall (by Amazon EC2 Server and Shadowsocks)  register for the aws make an instance of EC2 (ubuntu) Authorize the public key chmod 400 ladder.pem  apt-get upgrade apt-get install p">
+<meta name="twitter:description" content="Ladder for the Great Wall (by Amazon EC2 Server and Shadowsocks)  register for the aws  make an instance of EC2 (ubuntu)  Authorize the public key chmod 400 ladder.pem   sudo apt-get upgrade  sudo apt">
 
 
 
@@ -312,14 +312,27 @@
       
         <p><strong>Ladder for the Great Wall (by Amazon EC2 Server and Shadowsocks)</strong></p>
 <ol>
-<li>register for the aws</li>
-<li>make an instance of EC2 (ubuntu)</li>
-<li>Authorize the public key <code>chmod 400 ladder.pem</code> </li>
-<li><code>apt-get upgrade</code></li>
-<li><code>apt-get install python-pip</code></li>
-<li><code>pip install shadowsocks</code></li>
-<li>Shadowsocks configuration</li>
-<li>Download client for Shadowsocks and configure <strong>port</strong> and <strong>IP</strong> </li>
+<li><p>register for the aws</p>
+</li>
+<li><p>make an instance of EC2 (ubuntu)</p>
+</li>
+<li><p>Authorize the public key <code>chmod 400 ladder.pem</code> </p>
+</li>
+<li><p><code>sudo apt-get upgrade</code></p>
+</li>
+<li><p><code>sudo apt-get install python-pip</code></p>
+</li>
+<li><p><code>export LC_ALL=C</code></p>
+</li>
+<li><p><code>sudo pip install shadowsocks</code></p>
+</li>
+<li><p>Open shadowsocks server</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ssserver -p your_port -k your_password -m aes-256-cfb -d start</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Download client for Shadowsocks and configure <strong>port</strong> and <strong>IP</strong> </p>
+</li>
+<li><p>Edit EC2 Security Group’s inbound rules (specify ip/port etc)</p>
+</li>
 </ol>
 
       
